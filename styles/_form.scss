@@ -1,0 +1,132 @@
+.form {
+  background: url('/images/form-background.jpg') no-repeat center center/cover;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+
+  & .form-title {
+    color: white;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+  }
+
+  & input[type=text], 
+  & input[type=email],
+  & input[type=phone] {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    opacity: 0.7;
+  }
+
+  & textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 1.3rem;
+    padding: 10px 0 0 10px;
+    resize: none;
+    opacity: 0.7;
+  }
+
+  & .btn-submit {
+    margin-top: 15px;
+    text-align: center;
+    width: 160px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+    opacity: 0.7;
+
+    &:hover {
+      letter-spacing: 2.5px;
+      box-shadow: 4px 8px 12px black;
+    }
+  }
+
+  & .news-letter-form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      padding: 30px 0;
+      margin: 40px 0;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 1000px;
+
+      & .news-letter-title {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        text-align: start;
+        margin: 15px 0 10px 15px;
+      }
+
+      & .wrapper-subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        & input[type=email] {
+          font-size: 1.3rem;
+          padding: 10px 0 10px 10px;
+          width: 350px;
+        }
+
+        & .btn-subscribe {
+          text-decoration: none;
+          color: white;
+          font-size: 1.3rem;
+          background: #F563AE;
+          padding: 10px 15px;
+          transition: 0.5s ease;
+
+          &:hover {
+            letter-spacing: 2px;
+          }
+        }
+      }
+    
+      & .details-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 100px;
+        color: white;
+        font-size: 0.7rem;
+        margin: 20px 0;
+      }
+    
+      & .social-icons {
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+
+        & .fa-facebook:hover,
+        & .fa-twitter-square:hover,
+        & .fa-linkedin:hover,
+        & .fa-instagram-square:hover {
+          transition: all 0.5s;
+          transform: scale(1.2);
+        }
+      }
+    }
+}

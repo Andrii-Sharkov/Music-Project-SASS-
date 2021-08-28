@@ -1,0 +1,19 @@
+.footer {
+  background: black;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  & .footer-subtitle {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 30px 0;
+
+    & span {
+      color: #F563AE;
+    }
+  }
+}
